@@ -1,0 +1,320 @@
+﻿body {
+    margin: 0;
+    background-color: #ede6db;
+}
+
+/*heading*/
+
+.h1-heading {
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial;
+    color: #353131;
+    transition: .5s;
+}
+
+
+
+/* Partier */
+
+.parti-img {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+
+.triangle-container:has(.parti-img-r:hover) > .triangle {
+    background: red;
+}
+
+.triangle-container:has(.parti-img-sv:hover) > .triangle {
+    background: red;
+    opacity: 75%;
+}
+
+.triangle-container:has(.parti-img-ap:hover) > .triangle {
+    background: red;
+    opacity: 50%;
+}
+
+.triangle-container:has(.parti-img-sp:hover) > .triangle {
+    background: red;
+    opacity: 25%;
+}
+
+.triangle-container:has(.parti-img-mdg:hover) > .triangle {
+    background: #ede6db;
+}
+
+.triangle-container:has(.parti-img-krf:hover) > .triangle {
+    background: #002cff;
+    opacity: 25%;
+}
+
+.triangle-container:has(.parti-img-v:hover) > .triangle {
+    background: #002cff;
+    opacity: 50%;
+}
+
+.triangle-container:has(.parti-img-h:hover) > .triangle {
+    background: #002cff;
+    opacity: 75%;
+}
+
+.triangle-container:has(.parti-img-frp:hover) > .triangle {
+    background: #002cff;
+}
+
+
+.parti-img-r:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-sv:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-ap:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-sp:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-mdg:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-krf:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-v:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-h:hover {
+    transform: scale(1.5);
+}
+
+.parti-img-frp:hover {
+    transform: scale(1.5);
+}
+
+
+.card {
+    margin: 10px;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ede6db;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*triangle*/
+
+/* trekant */
+
+.triangle-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #ede6db;
+}
+
+.triangle {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transition: 1s;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.triangle-left {
+    background: #ede6db;
+    left: 0;
+    border-radius: 2%;
+}
+
+.triangle-right {
+    background: #ede6db;
+    right: 0;
+    left: 100%;
+    border-radius: 2%;
+}
+
+.content-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+/*Fylke dropdown*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*submitt button*/
+
+button {
+    font-family: Arial;
+}
+
+
+
+.dropdown-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #353131;
+    border-radius: 5px;
+    background-color: #ede6db;
+    cursor: pointer;
+    font-family: Arial;
+    color: #353131;
+}
+
+    .dropdown-button:hover {
+        background-color: #353131;
+        color: #ede6db;
+    }
+
+
+.stem-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #353131;
+    border-radius: 5px;
+    background-color: #ede6db;
+    color: #353131;
+    cursor: pointer;
+    font-family: Arial;
+    height: 43px;
+}
+
+    .stem-button:hover {
+        background-color: #353131;
+        color: #ede6db;
+    }
+
+
+    /*nav*/
+
+
+.topnav {
+    background-color: #353131;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+    .topnav a:hover {
+        background-color: #ede6db;
+        color: #353131;
+    }
+
+
+    .topnav a.active {
+        background-color: #ede6db;
+        color: #353131;
+    }
+
+
+    /*table*/
+
+table {
+    font-family: Arial;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1.5px solid #353131;
+    text-align: left;
+    padding: 8px;
+    color: #353131;
+}
+
+tr:nth-child(even) {
+    /*background-color: #353131;
+    opacity: 25%;*/
+}
+
+.table-div {
+    margin-top: 10px;
+}
